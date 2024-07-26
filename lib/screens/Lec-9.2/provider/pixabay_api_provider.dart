@@ -1,8 +1,7 @@
 import 'package:adv_ch_9/helper/helper.dart';
-import 'package:adv_ch_9/modal/pixabay_api_modal.dart';
 import 'package:flutter/cupertino.dart';
-
-import '../utils/global.dart';
+import '../../../utils/global.dart';
+import '../modal/pixabay_api_modal.dart';
 
 class PixabayApiProvider extends ChangeNotifier{
 

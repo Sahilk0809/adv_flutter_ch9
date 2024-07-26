@@ -1,10 +1,9 @@
 import 'package:adv_ch_9/helper/helper.dart';
-import 'package:adv_ch_9/modal/pixabay_api_modal.dart';
-import 'package:adv_ch_9/provider/pixabay_api_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import '../../utils/global.dart';
+import '../../../../utils/global.dart';
+import '../../modal/pixabay_api_modal.dart';
+import '../../provider/pixabay_api_provider.dart';
 
 class PixabayApi extends StatelessWidget {
   const PixabayApi({super.key});
