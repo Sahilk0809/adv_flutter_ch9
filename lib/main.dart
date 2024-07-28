@@ -1,4 +1,7 @@
 import 'package:adv_ch_9/routes/routes.dart';
+import 'package:adv_ch_9/screens/Lec-9.1.2/provider/e_commerce_cart_provider.dart';
+import 'package:adv_ch_9/screens/Lec-9.1.2/provider/e_commerce_home_provider.dart';
+import 'package:adv_ch_9/screens/Lec-9.1.2/provider/e_commerce_provider.dart';
 import 'package:adv_ch_9/screens/Lec-9.1/provider/detail_recipe_provider.dart';
 import 'package:adv_ch_9/screens/Lec-9.1/provider/recipe_provider.dart';
 import 'package:adv_ch_9/screens/Lec-9.2/provider/pixabay_api_provider.dart';
@@ -24,6 +27,15 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => DetailRecipeProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => ECommerceProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => ECommerceHomeProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => ECommerceCartProvider(),
         ),
       ],
       builder: (context, child) => MaterialApp(
