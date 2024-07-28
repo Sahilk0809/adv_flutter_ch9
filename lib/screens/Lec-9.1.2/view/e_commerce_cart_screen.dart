@@ -78,24 +78,61 @@ class ECommerceCartScreen extends StatelessWidget {
                     height: height * 0.25,
                     width: double.infinity,
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(18.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text(
-                            'Total Price',
+                            'Price',
                             style: TextStyle(
                               fontSize: 18,
                             ),
                           ),
-                          // Text(ecommerceCartProviderTrue.discountPercentage.toString()),
+                          Text(
+                            '${ecommerceCartProviderTrue.discount}',
+                            style: const TextStyle(
+                              fontSize: 18,
+                              decoration: TextDecoration.lineThrough,
+                              decorationThickness: 2,
+                            ),
+                          ),
                           const Text(
                             'Discounted Price',
                             style: TextStyle(
                               fontSize: 18,
                             ),
                           ),
-                          Text(ecommerceCartProviderTrue.price.toString()),
+                          Text(
+                            '${ecommerceCartProviderTrue.price}',
+                            style: const TextStyle(
+                              fontSize: 18,
+                            ),
+                          ),
+                          const Spacer(),
+                          Container(
+                            alignment: Alignment.center,
+                            height: height * 0.07,
+                            margin: const EdgeInsets.only(top: 10),
+                            width: width,
+                            decoration: BoxDecoration(
+                              color: Colors.white10,
+                              borderRadius: BorderRadius.circular(40),
+                              boxShadow: const [
+                                BoxShadow(
+                                  spreadRadius: 1,
+                                  blurRadius: 2,
+                                  color: Colors.black,
+                                ),
+                              ],
+                            ),
+                            child: Text(
+                              'Pay ${ecommerceCartProviderTrue.price}',
+                              style: const TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),

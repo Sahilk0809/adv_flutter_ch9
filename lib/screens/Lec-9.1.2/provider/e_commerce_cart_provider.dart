@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 class ECommerceCartProvider extends ChangeNotifier {
 
   double price = 0;
+  double discount = 0;
+  int quantity = 1;
 
   void addQty(int index) {
     qty[index]++;
@@ -20,6 +22,7 @@ class ECommerceCartProvider extends ChangeNotifier {
   }
 
   void removeFromCart(int index){
+    price -= cartList[index].price;
     cartList.removeAt(index);
     qty[index] = 1;
     notifyListeners();
@@ -33,7 +36,8 @@ class ECommerceCartProvider extends ChangeNotifier {
   }
   void totalPrice(){
     for(int i = 0; i < cartList.length; i++){
-     price += cartList[i].discountPercentage;
+     discount = cartList[i].discountPercentage + cartList[i].price;
+     quantity += qty[i];
     }
     notifyListeners();
   }
