@@ -27,10 +27,13 @@ Our e-commerce application, built with Flutter and powered by robust APIs, offer
 https://github.com/user-attachments/assets/641490cb-a044-4c76-b5ef-74118173705e
 
 
-# 9.2 Call Pixabay API & Represent in UI.
+# 9.2 Call Pixabay API & Represent in UI & Set Wallpaper.
 
 <img src="https://github.com/user-attachments/assets/591072c6-2b0f-46ed-a3df-708b0dc6caef" height=65% width=22%>
 <img src="https://github.com/user-attachments/assets/7e34563e-610b-451e-9150-e56be89a877c" height=65% width=22%>
+<img src="https://github.com/user-attachments/assets/dc6e2a91-7b8d-4da3-b58b-dd23405c35ad" height=65% width=22%>
+<img src="https://github.com/user-attachments/assets/6d6d6ede-bb3e-456f-9acf-f4032086fb92" height=65% width=22%>
+
 
 <a href="https://github.com/Sahilk0809/adv_flutter_ch9/tree/master/lib/screens/Lec-9.2"> Click here for the source code </a>
 
@@ -43,4 +46,5 @@ This Flutter application demonstrates how to perform API calls and implement a s
 - `Search Functionality:-` Allows users to search through the fetched data.
 - `State Management:-` Uses Provider for state management.
 
-https://github.com/user-attachments/assets/5e5d4387-49b1-4b95-81c3-bda5112c40a9
+https://github.com/user-attachments/assets/ef72682b-cee7-416c-8c1e-c49368d179da
+
