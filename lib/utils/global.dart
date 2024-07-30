@@ -11,3 +11,5 @@ int ecommerceSelectedIndex = 0;
 List cartList = [];
 
 List<int> qty = [];
+
+int pixaBaySelectedIndex = 0;

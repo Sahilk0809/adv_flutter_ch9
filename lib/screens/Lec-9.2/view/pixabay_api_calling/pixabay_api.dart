@@ -69,15 +69,22 @@ class PixabayApi extends StatelessWidget {
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                 ),
-                itemBuilder: (context, index) => Container(
-                  height: 300,
-                  width: double.infinity,
-                  margin: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: NetworkImage(apiModal!.hits[index].webFormatURL),
+                itemCount: pixabayApiProviderTrue.pixabayApiModal!.hits.length,
+                itemBuilder: (context, index) => GestureDetector(
+                  onTap: () {
+                    pixaBaySelectedIndex = index;
+                    Navigator.of(context).pushNamed('/detailP');
+                  },
+                  child: Container(
+                    height: 300,
+                    width: double.infinity,
+                    margin: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(apiModal!.hits[index].webFormatURL),
+                      ),
                     ),
                   ),
                 ),
